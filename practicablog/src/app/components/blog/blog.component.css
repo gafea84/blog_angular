@@ -1,0 +1,93 @@
+/* ESTILOS DEL FORM */
+
+.blog-title{
+  font-size: 500 px;
+  background-color: rgb(240, 246, 245);
+  font-weight: bold;
+  align-items: center;
+  padding: 40px;
+  margin: 10px 10px 10px;
+  text-align: center;
+  display: block;
+}
+
+.form-title{
+  font-size: 200 px;
+  background-color: rgb(152, 150, 150);
+  font-weight: bold;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 10px 10px;
+  text-align: center;
+  display: block;
+  width: 100%; 
+}
+
+.name-box1,.name-box2,.name-box3,.name-box4 {
+  align-items: center;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  width: 100%;    
+  }
+    
+#data, #body, #url, #title {
+  padding: 50 px;
+  align-items: center;
+  display: inline-flex;
+  margin: 5px 30px 5px;
+  width: 30%;
+}
+
+
+/* ESTILOS DE LA LISTA */
+
+.lista {
+  font-size: 200 px;
+  background-color: rgb(100, 130, 154);
+  font-weight: bold;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 10px 10px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  list-style: none;
+}
+
+/* ESTILOS DE LAS NOTICIAS */
+
+.galeria1,.galeria2 {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .galeria figcaption{
+  text-align: center;
+  margin: 10px 0px;
+  }
+  
+  img{
+  width: 100%;
+  height: auto;
+  display: block;
+  }
+  
+  button{
+  width: 50%;
+  padding: 10px;
+  font-weight: bold;
+  }
+
+  /* ESTILOS DEL FOOTER */
+
+  .footer-text{
+  align-items: center;
+  padding: 10px;
+  margin: 10px 10px 10px;
+  text-align: center;
+  display: block;
+}

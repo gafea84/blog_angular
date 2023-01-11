@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="blog.component.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+  rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a7ffce96f4.js" crossorigin="anonymous"></script>
+
+  <title>**Blog de noticias**</title>
+
+</head>
+
+<body>
+  
+  <div>
+    <h1 class="blog-title">BLOG DE NOTICIAS</h1>
+  </div>    
+
+
+  <div class="form-title">
+       
+    <h2 class="form-title">¡Introduce una noticia!</h2>
+    
+    <div class="name-box1">
+      <label for="title">Titular de la noticia</label>
+      <input type="text" id="title" [(ngModel)]="title">
+    </div>
+
+    <div class="name-box2">
+      <label for="url">Imagen (URL de la foto)</label>
+      <input type="text" id="url" [(ngModel)]="url">
+    </div>
+
+    <div class="name-box3">
+      <label for="body">Cuerpo de la noticia</label>
+      <input type="text" id="body" [(ngModel)]="body">
+    </div>
+
+    <div class="name-box4">
+      <label for="data">Fecha de publicación</label>
+      <input type="number" id="data" [(ngModel)]="data">
+    </div>
+
+    <button type="button" class="btn btn-primary" (click)="guardarDatos()">GUARDAR</button>
+      
+  </div>
+      
+  <section class="lista">
+    <h2>Listado de noticias</h2>
+    <ul [innerHTML]="resultado"></ul>
+  </section>
+
+
+  <div class="galeria1">
+
+    <figure>
+      <img [src]="arrImagenes[imagenActual1].url" [alt]="arrImagenes[imagenActual1].title">
+      <figcaption>{{ arrImagenes[imagenActual1].title }}</figcaption>
+    </figure>
+
+    <button type="button" class="btn btn-outline-primary" (click)="cambiarImagen1($event)">ATRÁS</button>
+    <button type="button" class="btn btn-outline-primary" (click)="cambiarImagen1($event)">SIGUIENTE</button>
+  </div>
+
+
+  <div class="galeria2">
+        
+    <figure>
+      <img [src]="arrImagenes[imagenActual2].url" [alt]="arrImagenes[imagenActual2].title">
+      <figcaption>{{ arrImagenes[imagenActual2].title }}</figcaption>
+    </figure>
+        
+    <button type="button" class="btn btn-outline-primary" (click)="cambiarImagen2($event)">ATRÁS</button>
+    <button type="button" class="btn btn-outline-primary" (click)="cambiarImagen2($event)">SIGUIENTE</button>
+  </div>
+
+  <hr>
+
+  <footer class="footer">
+    <p class="footer-text">Blog de noticias 2022</p>
+  </footer>
+    
+  
+</body>
+
+</html>
